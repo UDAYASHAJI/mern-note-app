@@ -16,7 +16,7 @@ function Home() {
         });
 
         if (res.data.success) {
-          setUser(res.data.result); // sets name dynamically
+          setUser(res.data.result); 
         }
       } catch (err) {
         console.error(err);

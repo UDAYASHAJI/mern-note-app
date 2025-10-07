@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Navbar container */
+
   nav {
     background-color: rgb(71, 15, 104);
     color: #fff;
@@ -13,28 +13,27 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Flex layout for navbar items */
+ 
   ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Make responsive */
+    flex-wrap: wrap; 
   }
   
-  /* Individual items spacing */
   ul li {
     margin: 0 10px;
   }
   
-  /* Logo / App name */
+  
   ul li:first-child {
     font-size: 20px;
     font-weight: bold;
     cursor: default;
   }
   
-  /* Search input */
+ 
   ul li input[type="search"] {
     padding: 5px 10px;
     border-radius: 5px;
@@ -44,12 +43,11 @@
     transition: width 0.3s ease;
   }
   
-  /* Expand search input on focus */
+  
   ul li input[type="search"]:focus {
     width: 200px;
   }
-  
-  /* Button styling */
+
   ul li button {
     padding: 5px 12px;
     border: none;
@@ -66,7 +64,7 @@
     transform: scale(1.05);
   }
   
-  /* Responsive for mobile */
+
   @media (max-width: 600px) {
     ul {
       flex-direction: column;
