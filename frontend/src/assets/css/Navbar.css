@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(71, 15, 104);
+    color: aliceblue;
+    padding: 10px 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li input[type="search"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+ul li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(200, 200, 255);
+    color: rgb(71, 15, 104);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li button:hover {
+    background-color: rgb(150, 150, 255);
+}
