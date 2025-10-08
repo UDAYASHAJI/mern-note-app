@@ -26,12 +26,12 @@ function Login() {
   const handleSubmit = async (values, { resetForm }) => {
     try {
       const res = await axios.post("http://localhost:3000/api/login", values);
-      resetForm();
+  
       if (res.data.result) {
         setServerMessage(res.data.message);
         setTimeout(() => {
           navigate("/home");
-        }, 1000);
+        }, 1000);    resetForm();
       } else {
         setServerMessage(res.data.message);
       }

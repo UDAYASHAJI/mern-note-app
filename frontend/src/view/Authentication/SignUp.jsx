@@ -5,6 +5,7 @@ import axios from "axios";
 import Navbar from "../../component/Navbar";
 import "../../assets/css/login.css"; 
 import {useNavigate} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function SignUp() {
   const [serverMessage, setServerMessage] = useState("");
@@ -99,7 +100,11 @@ const navigate=useNavigate()
               >
                 {serverMessage}
               </div>
+              
             )}
+              <div className="signup-link">
+            Already have an account<Link to="/login">Login</Link>
+          </div>
           </Form>
         </Formik>
       </div>
